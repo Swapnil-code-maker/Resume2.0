@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapnil Soni - Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        /* Print Settings (Crucial for PDF) */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .no-print { display: none; }
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #e5e5e5;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        /* The Resume Page (A4 Dimensions) */
+        .resume-page {
+            width: 210mm;
+            min-height: 297mm;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        /* Header */
+        header {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin: 0;
+            color: #2c3e50;
+            font-size: 24pt;
+            text-transform: uppercase;
+        }
+        .subtitle {
+            margin: 5px 0 15px 0;
+            font-size: 11pt;
+            color: #555;
+        }
+        .contact-info {
+            font-size: 10pt;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .contact-info a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Sections */
+        h2 {
+            font-size: 14pt;
+            color: #2c3e50;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .section-content {
+            margin-bottom: 15px;
+        }
+
+        /* Items (Education, Projects) */
+        .item {
+            margin-bottom: 12px;
+        }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            font-size: 11pt;
+        }
+        .item-sub {
+            font-style: italic;
+            font-size: 10pt;
+            color: #555;
+            margin-bottom: 4px;
+        }
+        .item-desc {
+            font-size: 10pt;
+            margin: 0;
+            line-height: 1.4;
+        }
+        ul {
+            margin-top: 5px;
+            padding-left: 20px;
+            font-size: 10pt;
+        }
+        li {
+            margin-bottom: 3px;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            font-size: 10pt;
+        }
+        .skill-category {
+            font-weight: 600;
+            color: #444;
+        }
+
+        /* Print Button */
+        .print-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="window.print()" class="print-btn no-print">Save as PDF</button>
+
+    <div class="resume-page">
+        <header>
+            <h1>Swapnil Soni</h1>
+            <p class="subtitle">B.Tech CSE Student | Backend Engineer</p>
+            
+            <div class="contact-info">
+                <span>📍 Bhopal, India</span>
+                <a href="mailto:itsswapnil0@gmail.com">itsswapnil0@gmail.com</a>
+                <a href="https://www.linkedin.com/in/swapnil-soni-20162326b/">LinkedIn</a>
+                <a href="https://github.com/swapnil-code-maker">GitHub</a>
+                <!-- YOUR PORTFOLIO LINK -->
+                <a href="https://resumeswapnilsoni.netlify.app"><strong>Portfolio Website</strong></a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span>B.Tech in Computer Science & Engineering</span>
+                    <span>2024 – Present</span>
+                </div>
+                <div class="item-sub">Vellore Institute of Technology (VIT)</div>
+                <p class="item-desc">Current CGPA: 8.5 (Approx)</p>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span>ISC (Class XII)</span>
+                    <span>Completed 2023</span>
+                </div>
+                <div class="item-sub">St. Peter's School, Raebareli</div>
+                <p class="item-desc">Science Stream (PCM) with Computer Science.</p>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span>ICSE (Class X)</span>
+                    <span>Completed 2021</span>
+                </div>
+                <div class="item-sub">St. Peter's School, Raebareli</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div><span class="skill-category">Languages:</span> Java (Core), C, C++, JavaScript</div>
+                <div><span class="skill-category">Backend:</span> Node.js, Express, REST APIs</div>
+                <div><span class="skill-category">Database:</span> MySQL, PostgreSQL, MongoDB</div>
+                <div><span class="skill-category">Tools:</span> Git, GitHub, VS Code, Postman</div>
+                <div><span class="skill-category">Frontend:</span> HTML5, CSS3, React Basics</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            
+            <div class="item">
+                <div class="item-header">
+                    <span>Resume Website & Portfolio</span>
+                    <a href="https://resumeswapnilsoni.netlify.app" style="font-size: 9pt;">View Live</a>
+                </div>
+                <p class="item-desc">
+                    Built a responsive personal portfolio with real-time analytics integration. 
+                    Features include a serverless contact form (Netlify), Google Analytics tracking, and a glassmorphism UI.
+                </p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span>Stock Price Predictor</span>
+                </div>
+                <p class="item-desc">
+                    Developed a machine learning model using Python (Scikit-Learn) to predict stock trends. 
+                    Integrated the model with a Flask backend API for real-time predictions.
+                </p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span>Campus Course Record Manager (CCRM)</span>
+                </div>
+                <p class="item-desc">
+                    A Java Swing desktop application for managing student records. 
+                    Implemented CRUD operations using JDBC and MySQL for persistent data storage.
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
