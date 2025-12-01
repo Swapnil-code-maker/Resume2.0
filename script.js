@@ -1,24 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
     
-    // 1. REAL Visitor Counter (Using CountAPI)
+    // 1. Visitor Counter
     const viewDisplay = document.getElementById('view-count');
-    
-    // Note: This calls a free API to get a real count from the internet
     fetch('https://api.countapi.xyz/hit/swapnil-vit-portfolio/visits')
         .then(response => response.json())
         .then(data => {
             if(viewDisplay) viewDisplay.innerText = data.value;
         })
         .catch(err => {
-            console.log("Counter Error:", err);
-            // Fallback if API fails
             if(viewDisplay) viewDisplay.innerText = "125+"; 
         });
 
-
-    // 2. Typing Effect (Header)
+    // 2. Typing Effect (Backend Engineer)
     const textElement = document.querySelector('.typing-text');
-     const texts = ['Aspiring SDE', 'Backend Engineer', 'Java Developer']; 
+    const texts = ['Backend Developer', 'Java Specialist', 'Software Engineer'];
     let count = 0;
     let index = 0;
     let currentText = '';
@@ -40,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     })();
 
-    // 3. Scroll & Modal Logic
+    // 3. Scroll Reveal
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if(entry.isIntersecting) {
@@ -57,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 
-    // Modal
+    // 4. Modal
     const modal = document.getElementById('projectModal');
     const closeBtn = document.querySelector('.close-modal');
     const titleEl = document.getElementById('modalTitle');
