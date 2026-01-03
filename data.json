@@ -1,0 +1,14 @@
+{
+  "certificates": [
+    { "id": "cloud", "title": "Cloud Computing (Elite – 71%)", "org": "NPTEL · IIT Kharagpur", "image": "NPTEL.jpg" },
+    { "id": "sql", "title": "SQL & Relational Databases", "org": "IBM SkillsBuild", "image": "SQL.jpg" },
+    { "id": "data", "title": "Data Fundamentals", "org": "IBM SkillsBuild", "image": "DATA_FUNDAMENTAL.jpg" },
+    { "id": "iot", "title": "Industrial IoT Markets & Security", "org": "Coursera", "image": "IOT.jpg" },
+    { "id": "hackathon", "title": "SolVIT Hackathon 2025", "org": "VIT Bhopal University", "image": "HACKATHON.jpg" }
+  ],
+  "projects": [
+    { "id": "resume", "title": "Resume Portfolio Website", "desc": "High-quality resume website with responsive layout and serverless form.", "tech": "HTML, CSS, JavaScript, Netlify" },
+    { "id": "stock", "title": "Stock Price Predictor", "desc": "ML application predicting trends using historical market data.", "tech": "Python, Scikit-Learn, Flask" },
+    { "id": "cms", "title": "Campus Course Record Manager", "desc": "CRUD-based desktop system for academic record management.", "tech": "Java, JDBC, MySQL" }
+  ]
+}
